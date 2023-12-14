@@ -21,6 +21,12 @@ public class AnimalDespawn : MonoBehaviour
             Destroy(gameObject);
         }
         else if (transform.position.z < lowerBound)
-        {  Destroy(gameObject); }
+        {
+
+            Debug.Log("You Missed One! Git Gud!");
+            Destroy(gameObject);
+        }
+
+
     }
 }
